@@ -1,0 +1,28 @@
+// Settings file for app module
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+}
+
+rootProject.name = "InstaClone-Android"
+include ':app'
+include ':feature:feed'
+include ':feature:stories'
+include ':feature:messaging'
+include ':feature:explore'
+include ':feature:reels'
+include ':feature:profile'
+include ':common:data'
+include ':common:ui'
